@@ -50,6 +50,7 @@ You can monitor the progress of syncs in the `syncs` table and by outputting Sid
 
 ### Things to do
 
+- [ ] Add useful Rake tasks
 - [ ] Deploy to Heroku
 - [ ] Add models
 - [ ] Measure sync progress

@@ -3,7 +3,9 @@ module StocksDB
     class << self
       def from_index_entry(entry)
         attributes = {
-          symbol: entry.symbol,
+          symbol:   entry.symbol,
+          security: entry.security,
+          url:      entry.url,
         }
 
         upsert(attributes, unique_by: %i(symbol))

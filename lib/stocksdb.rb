@@ -25,5 +25,9 @@ module StocksDB
     def sync!
       Syncs::StocksSync.create!
     end
+
+    def create_database
+      DB.create
+    end
   end
 end

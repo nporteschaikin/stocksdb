@@ -12,6 +12,8 @@ module StocksDB
       ActiveRecord::Schema.define do
         create_table :stocks, force: :cascade do |t|
           t.string :symbol, index: { unique: true }, null: false
+          t.string :security, null: false
+          t.string :url, null: false
         end
 
         create_table :syncs, force: :cascade do |t|

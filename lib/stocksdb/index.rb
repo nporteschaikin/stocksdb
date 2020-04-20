@@ -3,12 +3,12 @@ module StocksDB
     include Enumerable
 
     class Entry
-      attr_reader :symbol
+      attr_reader :symbol, :security, :url
 
-      def initialize(symbol, url:, security:)
+      def initialize(symbol, security:, url:)
         @symbol   = symbol
-        @url      = url
         @security = security
+        @url      = url
       end
 
       def valid?
